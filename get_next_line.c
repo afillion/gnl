@@ -6,7 +6,7 @@
 /*   By: afillion <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/31 17:17:48 by afillion          #+#    #+#             */
-/*   Updated: 2015/12/31 17:17:50 by afillion         ###   ########.fr       */
+/*   Updated: 2016/01/07 19:39:14 by afillion         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int					get_next_line(int fd, char **line)
 	int				ret;
 
 	ret = 1;
-	if (BUFF_SIZE <= 0 || !line)
+	if (BUFF_SIZE <= 0 || !line || fd > 256)
 		return (-1);
 	if (!mem[fd])
 		mem[fd] = ft_strnew(0);
