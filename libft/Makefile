@@ -6,7 +6,7 @@
 #    By: afillion <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/30 15:37:28 by afillion          #+#    #+#              #
-#    Updated: 2015/12/03 18:38:44 by afillion         ###   ########.fr        #
+#    Updated: 2016/02/02 19:20:08 by afillion         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I includes
 
 SRC =  ft_strlcat.c \
 	ft_lstiter.c \
